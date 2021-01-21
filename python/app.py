@@ -1,3 +1,4 @@
+#!/bin/env python
 import json
 import os
 import sys
@@ -36,7 +37,7 @@ options = {
 hostname = os.getenv("EDUFLOW_API_HOSTNAME", "app.eduflow.com")
 protocol = os.getenv("EDUFLOW_API_PROTOCOL", "https")
 port = os.getenv("EDUFLOW_API_PORT", 443)
-url = f"{protocol}://{hostname}/api/graphql"
+url = f"{protocol}://{hostname}:{port}/api/graphql"
 
 request = urllib.request.Request(url, **options)
 

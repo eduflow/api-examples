@@ -1,3 +1,5 @@
+#!/bin/env node
+
 if (!process.env.EDUFLOW_API_KEY) {
   console.error(`Enter your EDUFLOW_API_KEY:
 
@@ -33,8 +35,6 @@ const options = {
 
 const req = http.request(options, (res) => {
   let data = "";
-  console.log(`statusCode: ${res.statusCode}`);
-
   res.on("data", (d) => {
     data += d;
   });
