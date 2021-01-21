@@ -1,0 +1,21 @@
+{
+  "name": "eduflow-api-example-node",
+  "version": "0.0.1",
+  "description": "Example of using eduflow graphql client",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "local": "env EDUFLOW_API_PROTOCOL=http EDUFLOW_API_HOSTNAME=localhost EDUFLOW_API_PORT=8000 node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eduflow/api-examples.git"
+  },
+  "author": "Eduflow Team",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/eduflow/api-examples/issues"
+  },
+  "homepage": "https://github.com/eduflow/api-examples#readme"
+}
